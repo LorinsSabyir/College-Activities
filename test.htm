@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wayayay</title>
+</head>
+<body>
+
+  <h1>Dakmat's Coffee Shop</h1>
+  <ol id="coffee"></ol>
+  <ol id="price"></ol>
+
+  <h3>Choose your desired coffee</h3>
+  <input type="text" id="input">
+
+  <script>
+    let coffee = ['nescafe stick', 'kopiko black', 'kopiko brown', 'sinangag na mais'];
+    let prices = [5, 10, 10, 5];
+    let choices = [];
+    let list1 = document.getElementById("coffee");
+    let list2 = document.getElementById("price");
+    let li;
+    let input = document.getElementById('input').value;
+    
+    for (i = 0; i < coffee.length; ++i) {
+        li = document.createElement('li');
+        li.innerText = coffee[i];
+        list1.appendChild(li);
+    }
+
+    for (i = 0; i < prices.length; ++i) {
+        li = document.createElement('li');
+        li.innerText = prices[i];
+        list2.appendChild(li);
+    }
+
+    
+
+
+  </script>
+</body>
+</html>

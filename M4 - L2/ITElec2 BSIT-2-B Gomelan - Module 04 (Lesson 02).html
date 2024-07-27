@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index.json"></script>
+  <title>Module 4 - Lesson 2 Assessment</title>
+
+  <script type="text/javascript" language="javascript">
+    $(document).ready(function lorDoc() {
+      $('#lorButt').click(function lorButt(event){
+        $.getJSON('index.json', function lorJson(lorData) {
+          $('#lorData').html('<p> Last Name: ' + lorData.lastName + '</p>');
+          $('#lorData').append('<p> First Name: ' + lorData.firstName + '</p>');
+          $('#lorData').append('<p> Middle Name: ' + lorData.middleName + '</p>');
+          $('#lorData').append('<p> Course Year & Set: ' + lorData.courseYetSet + '</p>');
+          $('#lorData').append('<p> Address: ' + lorData.address + '</p>');
+          $('#lorData').append('<p> Age: ' + lorData.age + '</p>');
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <h1>My Personal Information</h1>
+    <input type="button" value="Load Data" id="lorButt">
+    <div id="lorData"></div>
+  </div>
+</body>
+</html>

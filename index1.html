@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staircase Table</title>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+
+        td {
+          border: 1px solid black;
+          padding: 5px;
+        }
+
+        /* pra pang schange sa color sa outer layer */
+        td:first-child,
+        td:last-child,  
+        tr:last-child {
+          background-color: yellow; 
+        }
+        
+    </style>
+</head>
+
+<body>
+
+  <table id="mytable">
+
+    <script type="text/javascript">
+      
+        var td = prompt("Enter how many table data?");
+        var count = 0;
+
+        // pang generate sa rows
+        for (var row = 1; row <= td; row++) {
+          document.write("<tr>");
+
+            // pang generate sa columns
+          for (var col = 1; col <= row; col++) {
+            document.write("<td>" + count + "</td>");
+            count++;
+          }
+
+          document.write("</tr>");
+        }
+        
+    </script>
+
+  </table>
+
+</body>
+</html>

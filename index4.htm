@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Final Assignment 1</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h2 class="text-center m-3">Mga Gwapo</h2>
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Enter name:</span>
+        <input type="text" id="entername" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+      
+        <button onclick="addGwapo()" class="btn btn-outline-success me-3 rounded-end">
+          Add
+        </button>
+
+        <span class="input-group-text rounded-start" id="inputGroup-sizing-lg">Select name:</span>
+        <input type="text" id="selectname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+      
+        <button onclick="delGwapo()" class="btn btn-outline-danger">
+          Delete
+        </button>
+
+      </div>
+
+      <div class="list container text-center mt-3">
+        <ol id="gwapo" class="container border-top">
+          
+        </ol>
+      </div>
+      
+      
+
+
+    </div>
+  </main>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+  function addGwapo(){
+    var name = document.getElementById('entername').value;
+    var btn = document.createElement('li');
+    btn.innerHTML = name;
+    document.getElementById('gwapo').appendChild(btn);	
+    document.getElementById('entername').value = "";
+  }
+
+  function delGwapo(){
+    var name = document.getElementById('selectname').value;
+    var list = document.getElementById('gwapo');
+    var items = list.getElementsByTagName('li');
+    
+    for (var i = 0; i < items.length; ++i) {
+      if (items[i].innerHTML === name) {
+        list.removeChild(items[i]);
+        break;
+      }
+    }
+  }
+
+</script>
+</body>
+</html>

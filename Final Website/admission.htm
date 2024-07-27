@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Admission</title>
+    
+</head>
+<body>
+  <!-- ========================================NAVBAR======================================== -->
+  <header>
+    <div class="header-bg"></div>
+    <div class="top-nav">
+          <nav class="navbar navbar-expand-lg">
+  <!-- ==============================LOGO============================== -->
+            <div class="logo-cont">
+              <div class="logo img-container">
+                <a href="">
+                  <picture>
+                    <source media="(max-width: 991px)" srcset="images\logo1.PNG">
+                    <img src="images\logo.png" alt="">
+                  </picture>
+                </a>
+              </div>
+                <span>
+                  Philippine <br> Military <br> Academy 
+                </span>
+            </div>
+  <!-- ==============================NAVBUTTONS============================== -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav full-width">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="homepage.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.htm">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropbtn active" href="admission.htm">ADMISSIONS</a>
+                  <div class="dropdown-content">
+                    <a href="enrollment.html">Online Enrollment</a>
+                    <a href="schedule.html">Admission Schedules</a>
+                    <a href="passed.html">Entrance Exam Passers</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">ACADEMICS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropbtn">CAMPUS LIFE</a>
+                  <div class="dropdown-content">
+                    <a href="sign-in.html">Sign-in</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">RESEARCH</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+  </header>
+
+  <!-- ==============================SIDEBAR============================== -->
+  <div class="side-bar">
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="homepage.html" class="nav-button">HOME</a>
+      <a href="aboutus.htm" class="nav-button">ABOUT</a>
+      <button class="dropdown-btn nav-button">ADMISSIONS
+        <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-container">
+          <a href="enrollment.html">Online Enrollment</a>
+          <a href="schedule.html">Admission Schedules</a>
+          <a href="passed.html">Entrance Exam Passers</a>
+        </div>
+      <button class="nav-button">ACADEMICS
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <button class="dropdown-btn nav-button">CAMPUS LIFE
+        <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-container">
+          <a href="sign-in.html">Sign-in</a>
+        </div>
+      <a href="#" class="nav-button">RESEARCH</a>
+    </div>
+
+    <div class="open">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+      <picture>
+        <img src="images/logo1.PNG" alt="">
+      </picture>
+
+    </div>  
+  </div>
+
+
+
+  <br>
+  <div class="row">
+    <div class="col-3">
+      <div id="navbar" class="sticky-top">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action active" href="#list-item-1">Introduction</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">PMA Philosophy of Education</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">PMA Program Competency Statement</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Character Development Program Competency Statements</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-5">Physical Program Competency Statement</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-6">Academic Program Competency Statement</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-7">Military Program Competency Statement</a>
+        <br>
+        <div class="text-bg-secondary p-3 position-relative">
+          <br>
+            <a href="enrollment.html">
+              <button type="button" class="btn btn-outline-warning " >Application Form</button>
+            </a>
+          <br>
+          <br>
+         
+            <a href="schedule.html">
+              <button type="button" class="btn btn-outline-warning">Interview Schedule</button>
+            </a>
+          
+          <br>
+          <br>
+          
+            <a href="passed.html">
+              <button type="button" class="btn btn-outline-warning">List Of Passers</button>
+            </a>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          
+          <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" 
+          aria-controls="offcanvasTop">Requirements</button>
+
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasTopLabel">Requirements</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="container offcanvas-body">
+                  <p id="reqs1">
+                    <h1 id="reqs11">Qualifications to be a PMA Cadet</h1>
+                    <br>
+                    <hr class="hr">
+                    <br>
+                      <h3 id="reqs1">	○ Natural Born Filipino Citizen.</h3>
+                      <h3 id="reqs1">	○ Physically fit and of good moral character.</h3>
+                      <h3 id="reqs1">	○ Single and has never been married.</h3>
+                      <h3 id="reqs1">	○ Must pass the PMA Entrance Examination.</h3>
+                      <h3 id="reqs1">	○ No Administrative / Criminal Case.</h3>
+                      <h3 id="reqs1">
+                        ○ At least High School Graduate or must graduate not later 
+                        <br>than June of the year following the date of 
+                        <br> examination taken for Grade 12 students.
+                      </h3>
+                      <h3 id="reqs1">	○ Height Requirement for both Male and Female is 5 feet 
+                        <br> (not to exceed 6'4" for both).</h3>
+                      <h3 id="reqs1">	○ At least 17 years and not more than 22 years old 
+                        <br> on 01 April of the year of admission.</h3>
+
+                        <br>
+                        <br>
+                        <br>
+                    <h1 id="reqs11">Qualifications to be a PMA Cadet</h1>
+                    <br>
+                    <hr class="hr">
+                    <br>
+                    <h3 id="reqs1">	○ Push Ups</h3>
+                    <h3 id="reqs1">	○ Situps</h3>
+                    <h3 id="reqs1">	○ Pullups</h3>
+                    <h3 id="reqs1">	○ Run</h3>
+
+                    <br>
+                    <br>
+                    <br>
+                    <h1 id="reqs11">Medical Disqualifications</h1>
+                    <br>
+                    <hr class="hr">
+                    <br>
+                    <h3 id="reqs1">	○ Color Blind</h3>
+                    <h3 id="reqs1">	○ Any Communicable Disease</h3>
+                    <h3 id="reqs1">	○ Physical Deformities</h3>
+                    <h3 id="reqs1">	○ Scoliosis</h3>
+                    <h3 id="reqs1">	○ Tattoos</h3>
+                    <h3 id="reqs1">	○ Other Medical COnditions as Determined 
+                     <br> by AFP Medical Board</h3>
+                  </p>
+
+                </div>
+                
+              </div>
+              <br>
+              <br>
+              <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" 
+                  aria-controls="offcanvasTop">FAQ</button>
+
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasTopLabel">FAQ</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="container offcanvas-body">
+                  <p id="reqs1">
+                    <h1 id="reqs11">Frequently Asked Questions</h1>
+                    <br>
+                    <hr class="hr">
+                    <br>
+                      <h3 id="reqs11">Question: I applied to take the exam at a particular center.
+                        <br> Can I take the exam in another center?</h3>
+                      <h3 id="reqs1">Answer: YES, go the center on exam day and inform the proctor
+                        <br> about your circumstances.</h3>
+                        <br><hr>
+                        <br><br>
+                      <h3 id="reqs11">Question: Is there a limit to how many times
+                        <br> I can take the exam?</h3>
+                      <h3 id="reqs1">Answer:NONE, so long as you meet the requirements</h3>
+                      <br><hr>
+                      <br><br>
+                      <h3 id="reqs11">Question: I applied by mail but I did not receive a permit
+                        <br> or notice?</h3>
+                      <h3 id="reqs1">Answer:Check the master list for online applicants to verify
+                        <br> if you are qualified to take the exam. If you are not in the list and
+                        <br> you think you are qualified, contact the Office of Cadet Admission. If
+                        <br> you are in the list, proceed to the exam center on examination day.</h3>
+                        <br><hr>
+                        <br><br>
+                      <h3 id="reqs11">Question: What are the things I should bring during the exam day?</h3>
+                      <h3 id="reqs1">Answer:
+                       <br> Photocopy of Birth Certificate and Grades
+                       <br> 2 x 2 ID Picture
+                       <br> Valid ID (preferably school/driver's license)
+                      <br>  at least 2 pencils ( no. 2)</h3>
+                      <br><hr>
+                      <br><br>
+                      <h3 id="reqs11">Question: I did not apply by mail or online, can I go straight
+                        <br> to the exam center on exam day?</h3>
+                      <h3 id="reqs1">Answer: YES, but you will be last priority. Priority will be
+                        <br> given to regular applicants. Proctors bring only limited number
+                        <br> of exam materials.</h3>
+                        <br><hr>
+                        <br><br>
+                      <h3 id="reqs11">Question: How much is the fee to take the exam?</h3>
+                      <h3 id="reqs1">Answer: NO FEES. The exam is FREE.</h3>
+                      <br><hr>
+                      <br><br>
+                      <h3 id="reqs11">Question: How should I prepare for the exam?</h3>
+                      <h3 id="reqs1">Answer: Prepare for the examination covering Algebra
+                        <br> and Geometry; Grammar, Composition, Reading and Comprehension;
+                        <br> and Verbal/Numerical Reasoning and Pattern Analysis</h3>
+                        <br><hr>
+                        <br><br>
+                      <h3 id="reqs11">Question:How long is the exam?</h3>
+                      <h3 id="reqs1">Answer: On examination day, the whole morning (7am to 11am)
+                        <br> will be for administrative aspects of the exam (fill up forms,
+                        <br> limited physical examination, etc). The exam proper starts at exactly
+                        <br> 12:00 noon and will last up to 4:30 pm.</h3>
+                  </p>
+
+                </div>
+              </div>
+              
+              
+
+        </div>
+        
+      </div>
+    </div>
+    </div>
+    <div class="col-9">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <p class="h1">ADMISSION</p>
+        <hr class="hr">
+        <br>
+        <br>
+        <h3 id="list-item-1">Introduction</h3>
+        <hr>
+        <br>
+        <p class="h5">
+            The start of the journey of a Filipino youth who dreams to embrace the profession of arms, through the Philippine 
+            Military Academy (PMA), 
+            is when he submits his application form to the Office of Cadet Admission (OCA) for processing, so that he 
+            can take the Philippine Military Academy Cadet Qualification Test (PMACQT).
+            After receiving the Test Permit from the OCA, the applicant will report to the designated Examination Center on the date indicated 
+            on the permit. The applicant is to bring said Test Permit so that s/he will be allowed by the Proctors to take the Exam. 
+            If the applicant passes the Exam, s/he will receive a written notice from OCA informing him of the result of the Exam and 
+            instructing him to report to AFP, Medical Center (AFPMC). He will then undergo the Complete Physical Examination (CPE) where
+            his medical, physical, mental and emotional condition will be examined to determine his readiness and fitness for the military training in the Academy. CPE takes days, so a cadet candidate is required to stay in the billeting area provided by the Academy in AFPMC.
+            If the applicant successfully makes it, he will be required to report to PMA Liaison Office in AFPMC for final processing 
+            during the last week of March before s/he will be brought to Philippine Military Academy (PMA) on April 01 for the Oath-Taking Ceremony and Reception Rites, signaling his official entry to the Academy as member of a PMA Class.
+            From then on, and during the four years stay in the Academy. S/he will undergo the education and training in the Academy 
+            designed to prepare her/him into becoming an officer of the Armed Forces of the Philippines and the soldier of the Filipino people.
+        </p>
+        <br><br><br><br><br>
+        <hr class="hr">
+
+        <br>
+        <br>
+        <h3 id="list-item-2">PMA Philosophy of Education</h3>
+        <hr>
+        <br>
+        <p class="h5">
+            PMA adopts a holistic view of man as body, soul, and spirit. PMA believes that future leaders can be selected, 
+            formed, and developed to their fullest potentials. PMA is principally an institution for military leadership 
+            and it is from the total view of man that PMA’s leader development program is based. It contains character 
+            development, a balanced college education, military leadership, and physical development, necessary to prepare 
+            the cadets for the profession of arms and to be responsive to the needs of the Armed Forces and the Nation.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <h3 id="list-item-3">PMA Program Competency Statement</h3>
+        <hr>
+        <br>
+        <p class="h5">
+            A PMA graduate is a values-centered leader who possesses the character, the broad and basic military skills, 
+            and the education essential to the successful pursuit of a progressive military career in selfless service to 
+            the AFP and the Nation.
+            <br><br>
+            The education and training of a cadet in the Academy is characterized by the acronym CAMP, which stands for 
+            Character, Academics, Military Skills and Physical Fitness. These serve as the pillars in developing a well-rounded 
+            cadet who will become the future officer and leader of the Armed Forces of the Philippines. The CAMP is the 
+            blueprint of the present curriculum being implemented in the Academy.
+        </p>
+        <br><br><br><br><br>
+        <hr class="hr">
+
+        <br><br>
+        <h3 id="list-item-4">Character Development Program Competency Statements</h3>
+        <hr><br>
+        <p class="h5">A PMA graduate is a motivated leader who has imbibed the PMA core values, serves as a role model, 
+          acts a mentor, and exhibits both moral soundness and ethical responsibility in the performance of his/her expected 
+          roles.
+        </p>
+        <br><br><br><br>
+        <h3 id="list-item-5">Physical Program Competency Statement</h3>
+        <hr><br>
+        <p class="h5">A PMA graduate fully understands and applies the basics of Physical Fitness, Fitness Training, 
+          Nutrition and Sports Discipline, adheres to a healthy lifestyle and wellness which makes him/her physically 
+          prepared for military occupational tasks.
+        </p>
+        <br><br><br><br>
+        <h3 id="list-item-6">Academic Program Competency Statement</h3>
+        <hr><br>
+        <p class="h5">A PMA graduate is a military professional who possesses the broad and basic education holding a 
+          Bachelor of Science degree and who can competently use the knowledge learned from the Social Sciences, 
+          Natural Sciences, Languages, Management, Mathematics, Humanities, Literature, Engineering and Technology in 
+          appropriate situations in his/her progressive military career.</p>
+          <br><br><br><br>
+        <h3 id="list-item-7">Military Program Competency Statement</h3>
+        <hr><br>
+        <p class="h5">A PMA graduate is a military leader who possesses the basic military competencies of soldiery and 
+          the basic preparatory knowledge of his/her major branch of service peculiarities needed in the effective performance
+           of his/her roles in the AFP.
+        </p>
+        <br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row"> 
+        <div class="col">
+        <p>
+          Fort Del Pilar, Baguio City <br>
+          Philippine Military Academy <br>
+          Information provided by Public Affairs Office <br>
+          Philippines 2602Tel. Phone #: (074) 442-5520 /(074) 447-3690 <br>
+        </p>
+        </div> 
+        <div class="col right">
+          <p>
+            Copyright © Philippine Military Academy. <br>
+            All Rights Reserved 2018. <br>
+          </p>
+          <div class="follow">
+            Follow us on: 
+            <a href="https://www.facebook.com/leilorenzxavier.gomelan.5" class="fb">
+              <img src="images/logo-facebook.svg" alt="epbi" class="facebook">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+
+
+<script src="bootstrap-5.3.0-alpha3-dist\js\bootstrap.min.js"></script>
+<script src="js/navbar.js"></script>
+
+
+</body>
+</html>

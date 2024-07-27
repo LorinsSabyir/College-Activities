@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staircase Table</title>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+
+        td {
+          border: 1px solid black;
+          padding: 5px;
+        }
+
+        /* pra pang color sa even outputs */
+        #even {
+          background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+
+  <table id="mytable">
+
+    <script type="text/javascript">
+      
+        var td = prompt("Enter how many table data?");
+        var count = 0;
+
+        // pang generate sa rows
+        for (var row = 1; row <= td; row++) {
+          document.write("<tr>");
+
+            // pang generate sa columns
+          for (var col = 1; col <= row; col++) {
+
+            if (count % 2 == 0) { //pang butang ug id nga even
+              document.write("<td id='even'>" + count + "</td>"); 
+            } else {
+              document.write("<td>" + count + "</td>");
+            }
+
+            count++;
+          }
+
+          document.write("</tr>");
+        }
+        
+    </script>
+
+  </table>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta>
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>

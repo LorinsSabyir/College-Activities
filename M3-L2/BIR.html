@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gomelan LLX BSIT 1-I</title>
+
+  <style>
+    
+    .le-body {
+      font-family: "Lato", sans-serif;
+      background-image: url('background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+
+    #le-head {
+      font-size: 17px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+    }
+
+    .le-header {
+      padding: 1rem 1rem;
+      background-color: #f7ee6c;
+      color: blue;
+      opacity: 1;
+      transition: opacity 0.4s;
+      border: 2px solid #000000;
+      font-size: 1em;
+    }
+
+    .le-content {
+      display: flex;
+      width: 100vw;
+      height: 86vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .le-bir-select {
+      display: block;
+      font-size: 16px;
+      font-family: sans-serif;
+      font-weight: 700;
+      color: #444;
+      line-height: 1.3;
+      padding: 0.6em 1.4em 0.5em 0.8em;
+      width: 50%;
+      max-width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      border: 1px solid #aaa;
+      box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+      border-radius: 0.5em;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #fff;
+      background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+      background-repeat: no-repeat, repeat;
+      background-position: right 0.7em top 50%, 0 0;
+      background-size: 0.65em auto, 100%;
+    }
+
+    .le-bir-select:required:invalid {
+      color: #666;
+    }
+
+    .le-bir-option  {
+      color: #000;
+    }
+
+    .le-footer {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .le-image {
+      text-align: center;
+      height: 40px;
+      background-color: transparent;
+      margin-top: -20px; 
+      margin-bottom: -20px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .le-contact  {
+      border-radius: 20%;
+    }
+
+    @media screen and (min-width: 1203px) {
+      .le-header  {
+        width: 50%;
+        height: auto;
+      }
+
+    }
+    
+  </style>
+</head>
+
+<body class="le-body">
+
+  <div id="le-head" class="le-header">
+    <strong>
+      By using this website, you agree to the terms of the 
+      <a href="https://www.bir.gov.ph/">BIR Privacy Notice</a>
+    </strong>
+  </div>
+
+  <div class="le-content choices">
+    <select required class="le-bir-select">
+      <option disabled="disabled" selected="selected" class="le-bir-option">I want to...</option>
+      <option value="" class="le-bir-option">See Tax Deadline</option>
+      <option value="" class="le-bir-option">Know How to get a Tin</option>
+      <option value="" class="le-bir-option">Know How to Register a Business</option>
+      <option value="" class="le-bir-option">Know How to File a Tax Refund / Pay Taxes</option>
+      <option value="" class="le-bir-option">Use BIR Services</option>
+      <option value="" class="le-bir-option">Access BIR Forms</option>
+      <option value="" class="le-bir-option">Know Information per Tax Type</option>
+      <option value="" class="le-bir-option">See Reveneu Insurances</option>
+      <option value="" class="le-bir-option">See Zonal Values</option>
+      <option value="" class="le-bir-option">Know How to Get Tax Clearance</option>
+      <option value="" class="le-bir-option">Go To Home Page</option>
+    </select>
+  </div>
+
+  <input type="hidden" id="custId" name="custId" value="1203">
+
+  <div class="le-footer">
+    <a href="https://www.facebook.com/leilorenzxavier.gomelan.5" class="le-facebook">
+      <img src="images/facebook.png" alt="epbi" class="le-image">
+    </a>
+    <a href="https://www.bir.gov.ph/" class="le-twitter">
+      <img src="images/twitter-logo-on-black-background.png" alt="birdy" class="le-image"> 
+    </a>
+    <a href="https://www.youtube.com/" class="le-youtube">
+      <img src="images/youtube-logo.png" alt="yutub" class="le-image">
+    </a>
+    <a href="https://www.bir.gov.ph/" class="le-contact">
+      <img src="images/contact.jpg" alt="kontak" class="le-image contact">
+    </a>
+  </div>
+
+</body>
+</html>
